@@ -67,7 +67,7 @@ public class Pizza {
         if(takeaway!=0)
         System.out.println("Paperbag Added: " + takeaway);
         totalPrice= cheese+ toppings+ takeaway + price;
-        this.bill="Total Price: " + totalPrice;
+        this.bill="Total Price: " + totalPrice + "\n";
         return this.bill;
     }
 }
