@@ -9,6 +9,7 @@ public class Pizza {
     private int toppings=0;
     private int cheese=0;
     private int takeaway=0;
+    private boolean isbillgenerated=false;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -67,7 +68,11 @@ public class Pizza {
         if(takeaway!=0)
         System.out.println("Paperbag Added: " + takeaway);
         totalPrice= cheese+ toppings+ takeaway + price;
-        this.bill="Total Price: " + totalPrice + "\n";
+        if(!isbillgenerated){
+            this.bill="Total Price: " + totalPrice + "\n";
+            isbillgenerated=true;
+        }
+
         return this.bill;
     }
 }
