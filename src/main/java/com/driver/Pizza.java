@@ -25,6 +25,7 @@ public class Pizza {
             price=400;
             toppings=120;
         }
+        this.bill = "Base Price Of The Pizza: "+this.price + "\n";
     }
 
     public int getPrice(){
