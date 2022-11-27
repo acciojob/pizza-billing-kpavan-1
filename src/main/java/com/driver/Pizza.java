@@ -30,7 +30,7 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        cheese+=80;
+        cheese=80;
 //        totalPrice+=cheese;
 //        System.out.println("Extra Cheese Added: 80" + "\\");
     }
@@ -38,12 +38,12 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
         if(isVeg){
-            toppings+=70;
+            toppings=70;
 //            totalPrice+=70;
 //            System.out.println("Extra Toppings Added: 70" + "\\");
         }
         else{
-            toppings+=120;
+            toppings=120;
 //            totalPrice+=120;
 //            System.out.println("Extra Toppings Added: 120" + "\\");
         }
@@ -52,7 +52,7 @@ public class Pizza {
 
     public void addTakeaway(){
         // your code goes here
-        takeaway+=20;
+        takeaway=20;
 //        totalPrice+=20;
 //        System.out.println("Paperbag Added: 20" + "\\");
     }
